@@ -48,3 +48,30 @@ h2 {
 
 /* ------------- pod čáru přijdou tvé styly ------------- */
 
+.kocka:active{
+	transform: scaleY(0.75);	
+	transform-origin: /*100% 100%;*/ bottom;
+}
+.houpacka__deti {
+	transform-origin: 50% 80%; 
+	transform: rotate(-20deg);
+}
+.houpacka__deti:active {
+	transition: transform 1s;
+	transform: rotate(3turn); 
+	transition-delay: 0.1s;
+}
+/*když někdo na tu houpačku klikně, překlopí se houpačka na druhou stranu - tj. +25deg*/
+
+.tlacitko { 
+	background: yellow;
+	transition: background 300ms;
+	transition- background 0.3s;
+}
+
+.tlacitko:hover {
+	background: red;
+}
+.hladitko:active ~.kocka {
+	transform: scaleY(0.8);
+}
